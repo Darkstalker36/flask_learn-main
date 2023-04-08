@@ -51,19 +51,15 @@
         </nav>
     </header>
     <main class="container">
-        <h1>Привіт із сервера!</h1>
+        <h1>WELCOME!</h1>
         <!-- Головний контент сторінки -->
         <div class="banner">
+            {% for user in users %}
             <div class="my-card">
-                Картка 1
+                {{user.name}}
             </div>
-            <div class="my-card">
-                Картка 1
-            </div>
-            <div class="my-card">
-                Картка 1
-            </div>
-        </div>
+            {% endfor %}
+
     </main>
     <footer>
         <!-- Підвал сайту: про сайт, автор, контакти тощо -->
